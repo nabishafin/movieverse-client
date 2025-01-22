@@ -1,0 +1,92 @@
+[
+    {
+        "title": "The Final Horizon",
+        "poster": "https://i.ibb.co.com/qkDQm41/m-1.webp",
+        "genre": "Science Fiction",
+        "duration": "2h 30m",
+        "release_year": 2024,
+        "rating": "9.8/10",
+        "description": "In a future where humanity explores distant galaxies, a team of astronauts faces an unprecedented cosmic phenomenon that could alter the fabric of space and time."
+    },
+    {
+        "title": "A Heart's Promise",
+        "poster": "https://i.ibb.co.com/VB4LnD6/m-2.jpg",
+        "genre": "Drama",
+        "duration": "2h 10m",
+        "release_year": 2023,
+        "rating": "9.6/10",
+        "description": "A moving story about love, loss, and redemption as a woman promises to fulfill her late partner's last wish, leading to a journey of self-discovery and healing."
+    },
+    {
+        "title": "https://i.ibb.co.com/pvb2r0W/m-3.jpg",
+        "poster": "image_url_here",
+        "genre": "Thriller",
+        "duration": "1h 55m",
+        "release_year": 2022,
+        "rating": "9.4/10",
+        "description": "A detective delves deep into a case that unravels dark secrets from the past, only to discover shocking truths that will change everything."
+    },
+    {
+        "title": "The Last King",
+        "poster": "https://i.ibb.co.com/Ct38f5P/m-4.jpg",
+        "genre": "Action",
+        "duration": "2h 20m",
+        "release_year": 2021,
+        "rating": "9.3/10",
+        "description": "In the final battle for the throne, a once-exiled king returns to reclaim his kingdom, facing enemies both within and outside his borders."
+    },
+    {
+        "title": "Echoes of Tomorrow",
+        "poster": "https://i.ibb.co.com/5jkMgf6/mv-5.jpg",
+        "genre": "Adventure",
+        "duration": "2h 5m",
+        "release_year": 2024,
+        "rating": "9.1/10",
+        "description": "A group of explorers stumbles upon a hidden artifact that allows them to travel through time, but they must face the consequences of altering history."
+    },
+    {
+        "title": "Midnight Escape",
+        "poster": "https://i.ibb.co.com/syHN0kN/m-6.jpg",
+        "genre": "Action",
+        "duration": "1h 50m",
+        "release_year": 2023,
+        "rating": "9.0/10",
+        "description": "A fugitive on the run at midnight races against time to escape a deadly conspiracy, leading to a thrilling pursuit that uncovers secrets and danger."
+    },
+    {
+        "title": "Through the Forest",
+        "poster": "https://i.ibb.co.com/HP7HKQ7/m-7.jpg",
+        "genre": "Adventure",
+        "duration": "2h 25m",
+        "release_year": 2021,
+        "rating": "8.9/10",
+        "description": "A young adventurer embarks on a journey through an enchanted forest to find a mystical treasure, only to discover that the forest holds powerful secrets of its own."
+    },
+    {
+        "title": "Hidden Truths",
+        "poster": "https://i.ibb.co.com/QmbQLV7/mv8.jpg",
+        "genre": "Drama",
+        "duration": "1h 45m",
+        "release_year": 2022,
+        "rating": "8.7/10",
+        "description": "A family grapples with buried secrets when an old letter resurfaces, forcing them to confront painful truths about their past and their relationships."
+    },
+    {
+        "title": "City of Nightmares",
+        "poster": "https://i.ibb.co.com/BK738Cj/m-9.jpg",
+        "genre": "Horror",
+        "duration": "1h 40m",
+        "release_year": 2020,
+        "rating": "8.6/10",
+        "description": "A small town is haunted by a dark curse, as residents are plagued by terrifying visions of their worst fears, leading them to uncover the sinister history of their city."
+    },
+    {
+        "title": "The Chronicles of Zora",
+        "poster": "https://i.ibb.co.com/4NCWg5q/m-10.jpg",
+        "genre": "Action",
+        "duration": "2h 10m",
+        "release_year": 2023,
+        "rating": "8.5/10",
+        "description": "Zora, a fearless warrior, embarks on an epic journey to protect her kingdom from invaders, battling ruthless enemies and uncovering a hidden conspiracy."
+    }
+]
