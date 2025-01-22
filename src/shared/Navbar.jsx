@@ -1,8 +1,10 @@
 import { Link } from 'react-router-dom';
 import logo from '../assets/icons8-video-100.png'
+import { useContext } from 'react';
+import { AuthContext } from '../provider/AuthProvider';
 
 const Navbar = () => {
-    const user = ''
+    const { user, logOut } = useContext(AuthContext)
 
     return (
         <div className="navbar text-white bg-gradient-to-r from-black via-[#0f4f4f] to-black">
@@ -67,6 +69,7 @@ const Navbar = () => {
                             </li>
                             <li>
                                 <button
+                                    onClick={() => logOut()}
                                     className="bg-gray-600 block text-center w-full py-2 rounded-md"
                                 >
                                     Logout

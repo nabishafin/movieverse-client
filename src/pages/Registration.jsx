@@ -3,13 +3,17 @@
 import lofinbg from '../assets/authentication2.png'
 import { Link, useNavigate } from 'react-router-dom';
 import bg from '../assets/bg.png'
-// import { AuthContext } from '../provider/AuthProvider';
 import toast from 'react-hot-toast';
-// import useAxiosPublic from '../hooks/useAxiosPublic';
+
+import useAxios from '../hooks/useAxios';
+import { Helmet } from 'react-helmet-async';
+import { useContext } from 'react';
+import { AuthContext } from '../provider/AuthProvider';
+
 const Registration = () => {
     const navigate = useNavigate()
-    // const axiosPublic = useAxiosPublic()
-    // const { createUser, setUser, updateUserProfile, signInWithGoogle } = useContext(AuthContext)
+    const axiosApi = useAxios()
+    const { createUser, setUser, updateUserProfile, signInWithGoogle } = useContext(AuthContext)
 
 
 
@@ -28,28 +32,17 @@ const Registration = () => {
         } else if (!/[a-z]/.test(password)) {
             toast.error('Password must contain at least one lowercase letter.');
         } else {
-            // try {
-            //     //2. User Registration
-            //     const result = await createUser(email, password)
-            //     console.log(result)
-            //     await updateUserProfile(name, photoUrl)
-            //     setUser({ ...result.user, photoURL: photoUrl, displayName: name })
-            //     const userInfo = {
-            //         name: name,
-            //         email: email
-            //     }
-            //     // axiosPublic.post('/users', userInfo)
-            //     //     .then(res => {
-            //     //         if (res.data.insertedId) {
-            //     //             toast.success('Signup Successful')
-            //     //             navigate('/')
-            //     //             form.reset()
-            //     //         }
-            //     //     })
-
-            // } catch (err) {
-            //     toast.error(err?.message)
-            // }
+            try {
+                //2. User Registration
+                const result = await createUser(email, password)
+                await updateUserProfile(name, photoUrl)
+                setUser({ ...result.user, photoURL: photoUrl, displayName: name })
+                toast.success('Signup Successful')
+                navigate('/')
+                form.reset()
+            } catch (err) {
+                toast.error(err?.message)
+            }
         }
 
     }
@@ -58,9 +51,9 @@ const Registration = () => {
     return (
         <div>
             <div>
-                {/* <Helmet>
-                    <title>Bistro-Boss || Log In</title>
-                </Helmet> */}
+                <Helmet>
+                    <title>Bistro-Boss || Registration</title>
+                </Helmet>
                 <div className='min-h-screen border-2 '
                     style={{
                         backgroundImage: `url(${bg})`,

@@ -1,20 +1,16 @@
 
-// import React, { useContext } from 'react';
-// import { Helmet } from 'react-helmet-async';
+import React, { useContext } from 'react';
+import { Helmet } from 'react-helmet-async';
 import lofinbg from '../assets/authentication1.png'
 import { Link, useNavigate } from 'react-router-dom';
 import bg from '../assets/bg.png'
 import toast from 'react-hot-toast';
-// import { AuthContext } from '../provider/AuthProvider';
+import { AuthContext } from '../provider/AuthProvider';
+
 
 const LogIn = () => {
-
     const navigate = useNavigate();
-
-
-
-
-    // const { signIn, signInWithGoogle } = useContext(AuthContext);
+    const { signIn, signInWithGoogle } = useContext(AuthContext);
 
     const handlelogFormInfo = async (e) => {
         e.preventDefault();
@@ -29,24 +25,24 @@ const LogIn = () => {
         } else if (!/[a-z]/.test(password)) {
             toast.error('Password must contain at least one lowercase letter.');
         } else {
-            //     try {
-            //         // User Login
-            //         await signIn(email, password);
-            //         toast.success('Signin Successful');
-            //         navigate(from, { replace: true }); // Navigate back to the original page
-            //         form.reset();
-            //     } catch (err) {
-            //         toast.error(err?.message);
-            //     }
+            try {
+                // User Login
+                await signIn(email, password);
+                toast.success('Signin Successful');
+                navigate('/') // Navigate back to the original page
+                form.reset();
+            } catch (err) {
+                toast.error(err?.message);
+            }
 
         }
     }
 
     return (
         <div>
-            {/* <Helmet>
+            <Helmet>
                 <title>Bistro-Boss || Log In</title>
-            </Helmet> */}
+            </Helmet>
             <div className='min-h-screen border-2 '
                 style={{
                     backgroundImage: `url(${bg})`,
