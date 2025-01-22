@@ -2,11 +2,7 @@ import { Link } from 'react-router-dom';
 import logo from '../assets/icons8-video-100.png'
 
 const Navbar = () => {
-    const user = {
-        name: 'nvnvnd',
-        displayName: 'John Doe',
-        photoURL: 'https://via.placeholder.com/150', // Replace with actual user profile photo URL
-    };
+    const user = ''
 
     return (
         <div className="navbar text-white bg-gradient-to-r from-black via-[#0f4f4f] to-black">
