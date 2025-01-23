@@ -1,11 +1,10 @@
 import React, { useContext } from 'react';
-import { AuthContext } from '../provider/AuthProvider';
-import { Navigate, useLocation } from 'react-router-dom';
+import { Navigate } from 'react-router-dom';  // Ensure Navigate is imported
 import LoadingSpinner from '../shared/LoadingSpinner';
+import { AuthContext } from '../provider/AuthProvider';
 
 const PrivateRoute = ({ children }) => {
     const { user, loading } = useContext(AuthContext);
-    const location = useLocation();
 
     // Show loading spinner while authentication status is being determined
     if (loading) return <LoadingSpinner />;
@@ -14,7 +13,7 @@ const PrivateRoute = ({ children }) => {
     if (user) return children;
 
     // Redirect to login page if user is not authenticated
-    return <Navigate to="/login" state={{ from: location }} replace></Navigate>
+    return <Navigate to="/login" />;
 };
 
 export default PrivateRoute;

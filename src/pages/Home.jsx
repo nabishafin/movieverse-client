@@ -6,7 +6,7 @@ import MovieReviews from '../components/MovieReviews';
 
 const Home = () => {
     return (
-        <div>
+        <div className='bg-black'>
             <Banner></Banner>
             <FeaturedMovies></FeaturedMovies>
             <UpcomingReleases></UpcomingReleases>

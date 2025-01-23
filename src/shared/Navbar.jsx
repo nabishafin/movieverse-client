@@ -1,4 +1,4 @@
-import { Link } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
 import logo from '../assets/icons8-video-100.png'
 import { useContext } from 'react';
 import { AuthContext } from '../provider/AuthProvider';
@@ -22,13 +22,13 @@ const Navbar = () => {
             <div className="navbar-center hidden lg:flex">
                 <ul className="menu menu-horizontal px-1 font-semibold">
                     <li>
-                        <Link to="/">Home</Link>
+                        <NavLink to="/">Home</NavLink >
                     </li>
                     <li>
-                        <Link to="/allmovies">All Movies</Link>
+                        <NavLink to="/allmovies">All Movies</NavLink >
                     </li>
                     <li>
-                        <Link to="/">My Favorites</Link>
+                        <NavLink to="/">My Favorites</NavLink >
                     </li>
                 </ul>
             </div>
@@ -63,7 +63,7 @@ const Navbar = () => {
                         >
 
                             <li className='font-bold my-5'>
-                                <Link to="/addservice" className="justify-between">
+                                <Link to="/addmovies" className="justify-between">
                                     Add Movie
                                 </Link>
                             </li>

@@ -19,11 +19,11 @@ const AllMovies = () => {
 
 
     return (
-        <div className=''>
+        <div className='bg-black'>
             <Helmet>
                 <title>Bistro-Boss || All Movies</title>
             </Helmet>
-            <div className='my-10'>
+            <div className='py-10'>
                 <SectionHeading
                     title={'Your Portal to Cinematic Universes'}
                     subtitle={'Dive into the world of endless possibilities with Movieverse, your ultimate destination for everything cinema.'}
