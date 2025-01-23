@@ -8,6 +8,7 @@ import PrivateRoute from "./PrivateRoute";
 import AddMovies from "../pages/AddMovies";
 import MovieDetails from "../pages/MovieDetails";
 import FavoriteMovies from "../pages/FavoriteMovies";
+import ErrorPage from "../components/ErrorPage";
 
 
 
@@ -18,6 +19,7 @@ export const router = createBrowserRouter([
     {
         path: "/",
         element: <MainLayout />,
+        errorElement: <ErrorPage />,
         children: [
             {
                 path: "/",
