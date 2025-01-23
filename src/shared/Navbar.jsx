@@ -28,7 +28,7 @@ const Navbar = () => {
                         <NavLink to="/allmovies">All Movies</NavLink >
                     </li>
                     <li>
-                        <NavLink to="/">My Favorites</NavLink >
+                        <NavLink to="/fevorite">My Favorites</NavLink >
                     </li>
                 </ul>
             </div>

@@ -6,6 +6,8 @@ import Registration from "../pages/Registration";
 import AllMovies from "../pages/AllMovies";
 import PrivateRoute from "./PrivateRoute";
 import AddMovies from "../pages/AddMovies";
+import MovieDetails from "../pages/MovieDetails";
+import FavoriteMovies from "../pages/FavoriteMovies";
 
 
 
@@ -39,6 +41,18 @@ export const router = createBrowserRouter([
                 path: "/addmovies",
                 element: <PrivateRoute>
                     <AddMovies />
+                </PrivateRoute>,
+            },
+            {
+                path: "/movie/details/:id",
+                element: <PrivateRoute>
+                    <MovieDetails />
+                </PrivateRoute>,
+            },
+            {
+                path: "/fevorite",
+                element: <PrivateRoute>
+                    <FavoriteMovies />
                 </PrivateRoute>,
             },
         ],

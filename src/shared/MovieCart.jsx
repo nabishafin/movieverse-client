@@ -1,5 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
+import { Link } from 'react-router-dom';
 
 const MovieCart = ({ movie }) => {
     return (
@@ -34,13 +35,12 @@ const MovieCart = ({ movie }) => {
                     </div>
 
                     {/* See Details Button with hover effect */}
-                    <motion.button
-                        className="mt-4 w-full bg-indigo-600 text-white py-3 rounded-lg shadow-md hover:bg-indigo-700 hover:shadow-xl transition-all duration-300"
-                        whileHover={{ scale: 1.05 }}
-                        whileTap={{ scale: 0.95 }}
-                    >
-                        See Details
-                    </motion.button>
+                    <Link to={`/movie/details/${movie._id}`}>
+                        <button
+                            className="mt-4 px-6 py-2 bg-orange-500 text-white rounded-lg hover:bg-orange-600 focus:outline-none">
+                            See Details
+                        </button>
+                    </Link>
                 </div>
             </motion.div>
         </div>

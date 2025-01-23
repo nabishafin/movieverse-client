@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const MovieCard = ({ movie }) => {
     return (
@@ -20,10 +21,12 @@ const MovieCard = ({ movie }) => {
                     <p className="text-gray-300 text-sm mt-4">
                         {movie.description} {/* Dynamic description */}
                     </p>
-                    <button
-                        className="mt-4 px-6 py-2 bg-orange-500 text-white rounded-lg hover:bg-orange-600 focus:outline-none">
-                        See Details
-                    </button>
+                    <Link to={`/movie/details/${movie._id}`}>
+                        <button
+                            className="mt-4 px-6 py-2 bg-orange-500 text-white rounded-lg hover:bg-orange-600 focus:outline-none">
+                            See Details
+                        </button>
+                    </Link>
                 </div>
             </div>
         </div>
