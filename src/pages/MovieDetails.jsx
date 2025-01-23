@@ -54,7 +54,7 @@ const MovieDetails = () => {
         } catch (error) {
             Swal.fire({
                 title: "Error!",
-                text: "Could not add to favorites.",
+                text: "Could not add to favorites, Maybe alredy Added",
                 icon: "error",
             });
         }
