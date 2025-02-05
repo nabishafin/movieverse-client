@@ -4,7 +4,7 @@
 Movie Portal is a web application that simplifies the process of exploring movies, viewing detailed information, and managing a personal movie collection. Users can add movies to their lists, delete them, and even mark movies as favorites. The dynamic UI and smooth user experience ensure that movie lovers have an enjoyable time interacting with the platform.
 
 ## Screenshot
-![Movie Portal Screenshot](https://i.ibb.co/B2ZQ2MH3/movieverse-f8eae-web-app-Nest-Hub-Max.png)
+[Movie Portal Screenshot](https://i.ibb.co/B2ZQ2MH3/movieverse-f8eae-web-app-Nest-Hub-Max.png)
 
 
 
